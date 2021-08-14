@@ -6,7 +6,7 @@ import Book from "./views/Book";
 import UserBooks from "./views/UserBooks";
 import NewBook from "./views/NewBook/NewBook";
 import API from "./api/api";
-import "./App.css";
+import "./sass/App.scss";
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState("");
@@ -19,6 +19,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="nav-bar-placeholder"></div>
       <Switch>
         <Route
           exact
