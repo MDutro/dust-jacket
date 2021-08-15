@@ -4,7 +4,9 @@ const NewBookForm = ({ newBook, setNewBook, handleSubmit }) => {
   const form = (
     <form className="form" onSubmit={handleSubmit}>
       <div className="form-group">
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title" className="form-label">
+          Title
+        </label>
         <input
           type="text"
           name="title"
@@ -15,7 +17,9 @@ const NewBookForm = ({ newBook, setNewBook, handleSubmit }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="author">Author</label>
+        <label htmlFor="author" className="form-label">
+          Author
+        </label>
         <input
           type="text"
           name="author"
@@ -26,7 +30,9 @@ const NewBookForm = ({ newBook, setNewBook, handleSubmit }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="isbn">ISBN No.</label>
+        <label htmlFor="isbn" className="form-label">
+          ISBN No.
+        </label>
         <input
           type="text"
           name="isbn"
