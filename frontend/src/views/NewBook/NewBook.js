@@ -1,6 +1,5 @@
 import { useState } from "react";
 import API from "../../api/api";
-import axios from "axios";
 import NewBookForm from "./NewBookForm";
 
 const NewBook = () => {
@@ -12,13 +11,22 @@ const NewBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post("http://localhost:3001/api/v1/user-books", {
+    API({
+      method: "POST",
+      data: {
         title: newBook.title,
         author_name: newBook.author,
         isbn: newBook.isbn,
-      })
+      },
+    })
       .then((response) => console.log(response))
+      .then(() => {
+        setNewBook({
+          title: "",
+          author: "",
+          isbn: null,
+        });
+      })
       .catch((err) => console.log(err));
   };
 
