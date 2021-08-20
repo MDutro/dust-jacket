@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-label {
+  margin-bottom: 10px;
+}
