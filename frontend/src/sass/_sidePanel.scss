@@ -1,0 +1,8 @@
+.side-panel {
+  height: calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  grid-column: 1 / span 1;
+}

@@ -1,8 +1,12 @@
-const Home = ({ serverMessage }) => {
+import SidePanel from "../components/SidePanel";
+
+const Home = ({ userBookList }) => {
   return (
-    <div>
-      <h1>This is the Home page!</h1>
-      <h2>{serverMessage}</h2>
+    <div className="home-grid">
+      <SidePanel userBookList={userBookList} />
+      <div className="home-grid-container">
+        <h1>This is the Home page!</h1>
+      </div>
     </div>
   );
 };

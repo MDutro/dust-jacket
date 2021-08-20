@@ -9,11 +9,11 @@ import API from "./api/api";
 import "./sass/app.scss";
 
 const App = () => {
-  const [serverMessage, setServerMessage] = useState("");
+  const [userBookList, setUserBookList] = useState("");
 
   useEffect(() => {
     API.get()
-      .then((response) => setServerMessage(response.data))
+      .then((response) => setUserBookList(response.data))
       .catch((err) => console.log(err));
   }, []);
 
@@ -24,7 +24,7 @@ const App = () => {
         <Route
           exact
           path="/"
-          render={(props) => <Home {...props} serverMessage={serverMessage} />}
+          render={(props) => <Home {...props} userBookList={userBookList} />}
         />
         <Route
           path="/results"

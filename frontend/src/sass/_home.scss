@@ -1,0 +1,9 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.home-grid-container {
+  margin: 40 auto;
+  grid-column: 2 / span end;
+}

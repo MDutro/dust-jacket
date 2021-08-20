@@ -86,7 +86,6 @@ select {
 .nav-bar-placeholder {
   height: 3rem;
   background-color: #ffffff;
-  margin-bottom: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -101,3 +100,6 @@ button {
 
 @import "./_card.scss";
 @import "./_newBookForm.scss";
+@import "./bookListItem.scss";
+@import "./sidePanel.scss";
+@import "./home.scss";
