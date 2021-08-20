@@ -6,7 +6,7 @@ import Book from "./views/Book";
 import UserBooks from "./views/UserBooks";
 import NewBook from "./views/NewBook/NewBook";
 import API from "./api/api";
-import "./sass/App.scss";
+import "./sass/app.scss";
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState("");
